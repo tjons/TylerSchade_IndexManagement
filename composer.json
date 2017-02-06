@@ -1,0 +1,17 @@
+{
+  "name": "tylerschade/magento-index-management",
+  "description": "Email a Magento 2 quote item to a customer as a PDF",
+  "require": {
+    "php": ">=7.0.0"
+  },
+  "type": "magento2-module",
+  "version": "0.0.1",
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "TylerSchade\\IndexManagement\\": "src//"
+    }
+  }
+}
