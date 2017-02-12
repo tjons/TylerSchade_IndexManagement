@@ -28,6 +28,6 @@ class RefreshAll extends Action
 
         $redirect = $this->resultRedirectFactory->create();
 
-        return $redirect->setPath('*/');
+        return $redirect->setPath('indexer/indexer/list');
     }
 }

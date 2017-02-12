@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/layout_generic.xsd">
+    <referenceBlock name="adminhtml.indexer.grid.columnSet">
+        <block class="Magento\Backend\Block\Widget\Grid\Column" an="indexer_reindex">
+            <arguments>
+                <argument name="header" xsi:type="string" translate="true">Refresh Index</argument>
+                <argument name="sortable" xsi:type="string">0</argument>
+                <argument name="renderer" xsi:type="string">Magento\Backend\Block\Widget\Grid\Column\Renderer\Action</argument>
+                <argument name="index" xsi:type="string">indexer_id</argument>
+                <argument name="actions" xsi:type="array">
+                    <item name="refresh_action" xsi:type="array">
+                        <item name="url" xsi:type="array">
+                            <item name="base" xsi:type="string">indices/indices/refresh</item>
+                        </item>
+                        <item name="field" xsi:type="string">indexer_id</item>
+                        <item name="caption" xsi:type="string">Refresh</item>
+                    </item>
+                </argument>
+            </arguments>
+        </block>
+    </referenceBlock>
+</layout>
