@@ -5,7 +5,6 @@ namespace TylerSchade\IndexManagement\Controller\Adminhtml\Indices;
 use Magento\Backend\App\Action;
 use Magento\Indexer\Model\Indexer;
 use Magento\Indexer\Model\Indexer\Collection;
-use TylerSchade\IndexManagement\Indexer\Manager as IndexManager;
 use TylerSchade\IndexManagement\Indexer\ManagerFactory as IndexManagerFactory;
 
 class RefreshAll extends Action
@@ -13,12 +12,12 @@ class RefreshAll extends Action
     /**
      * @var IndexManagerFactory
      */
-    private $indexManagerFactory;
+    protected $indexManagerFactory;
 
     /**
      * @var Collection
      */
-    private $indexCollection;
+    protected $indexCollection;
 
     public function __construct(
         Action\Context $context,
@@ -50,7 +49,7 @@ class RefreshAll extends Action
         return $redirect->setPath('indexer/indexer/list');
     }
 
-    private function refreshIndex(string $id)
+    protected function refreshIndex(string $id)
     {
         $indexManager = $this->indexManagerFactory->create(['indexId' => $id]);
         $indexManager->refreshIndex();

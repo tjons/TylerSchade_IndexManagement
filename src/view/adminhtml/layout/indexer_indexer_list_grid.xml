@@ -1,5 +1,15 @@
 <?xml version="1.0" ?>
 <layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/layout_generic.xsd">
+    <referenceBlock name="adminhtml.indexer.grid.grid.massaction">
+        <arguments>
+            <argument name="options" xsi:type="array">
+                <item name="refresh_indices" xsi:type="array">
+                    <item name="label" xsi:type="string" translate="true">Refresh Selected Indexes</item>
+                    <item name="url" xsi:type="string">indices/indices/massRefresh</item>
+                </item>
+            </argument>
+        </arguments>
+    </referenceBlock>
     <referenceBlock name="adminhtml.indexer.grid.columnSet">
         <block class="Magento\Backend\Block\Widget\Grid\Column" as="indexer_reindex">
             <arguments>
