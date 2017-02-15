@@ -1,11 +1,11 @@
 {
   "name": "tylerschade/magento-index-management",
-  "description": "Email a Magento 2 quote item to a customer as a PDF",
+  "description": "Adds useful index management features to the Magento 2 admin panel",
   "require": {
     "php": ">=7.0.0"
   },
   "type": "magento2-module",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "autoload": {
     "files": [
       "registration.php"
