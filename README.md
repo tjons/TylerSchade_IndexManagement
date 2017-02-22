@@ -18,4 +18,4 @@ I decided that I never wanted to be in that situation again, so I build a module
 
 Here's a screenshot:
 
-![Module screenshot](http://imgur.com/IYO7g6P)
+![Module screenshot](http://i.imgur.com/IYO7g6P.png)
